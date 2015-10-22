@@ -35,7 +35,7 @@ cacheSolve <- function(x, ...) {
         matinv <- x$get_matrix_inverse()
         
         # Check if the inverse has already been calculated
-        # If so, get it from the cache and skips the computation
+        # If so, get it from the cache and skip the computation
         if(!is.null(matinv)) {
                 message("Getting cached data")
                 return(matinv)
